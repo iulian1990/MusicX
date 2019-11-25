@@ -1,51 +1,55 @@
 
-## MusicX Kotlin App
+MusicX Kotlin App
+-----------------
 
 Kotlin Sample App is a sample project that presents modern, 2019 approach to [Android](https://www.android.com/) application development using [Kotlin](https://kotlinlang.org/) and latest tech-stack.
 
 The goal of the project is to demonstrate best practices, provide a set of guidelines, and present modern Android application architecture. This application may look simple, but it
 has all of these small details that will set the rock-solid foundation of the larger app suitable for bigger teams and long application lifecycle management.
 
-Screenshots
-=================
+## Screenshots
 
-<p align="center">
-<img width="240" src="images/tracks.png">
-<img width="240" src="images/artist_song_list.png">
-<img width="240" src="images/create_playlist.png">
-<img width="240" src="images/pick_playlist.png">
-<img width="240" src="images/player.png">
-<img width="240" src="images/albums.png">
+
+<p align="center"> 
+    <kbd>
+        <img width="240" src="images/tracks.png">   
+    </kbd>
+    <kbd>
+        <img width="240" src="images/artist_song_list.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/create_playlist.png">
+    </kbd>
+
 </p>
+<p align="center"> 
+  <kbd><img width="240" src="images/pick_playlist.png"></kbd>
+  <kbd><img width="240" src="images/player.png"></kbd>
+  <kbd><img width="240" src="images/albums.png"></kbd>
+    
+</p>
+## Features
 
-Features
---------
 
 The app displays a list of recipes - family friendly, vegetarian and personal. Users can see details about recipes, and they can put likes to recipes that interest them. 
 
 Other features include creating new personal recipes, changing application background image.
 
-Development Environment
------------------------
+## Development Environment
 
 The app is written entirely in Kotlin and uses the Gradle build system.
 
-Architecture
-------------
-
-
 ## Project Structure
 
-
 <p align="center">
-<img src="images/package_structure.png">
+<img src="images/packages.png">
 </p>
 
 ## Tech-stack
 
 This project takes advantage of many popular libraries, plugins and tools of the Android ecosystem. Most of the libraries are in the stable version.
 
-### Dependencies
+#### Dependencies
 
 The app is built on top of the last year's app. The architecture is built around
 [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/).
