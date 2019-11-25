@@ -15,17 +15,23 @@ has all of these small details that will set the rock-solid foundation of the la
         <img width="240" src="images/tracks.png">   
     </kbd>
     <kbd>
-        <img width="240" src="images/artist_song_list.png">
+        <img width="240" src="images/albums.png">
     </kbd>
     <kbd>
-        <img width="240" src="images/create_playlist.png">
+       <img width="240" src="images/artist_song_list.png">
     </kbd>
 
 </p>
 <p align="center"> 
-  <kbd><img width="240" src="images/pick_playlist.png"></kbd>
-  <kbd><img width="240" src="images/player.png"></kbd>
-  <kbd><img width="240" src="images/albums.png"></kbd>
+    <kbd>
+        <img width="240" src="images/pick_playlist.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/player.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/create_playlist.png">
+    </kbd>
     
 </p>
 ## Features
