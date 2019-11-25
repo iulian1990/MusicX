@@ -12,7 +12,7 @@ Screenshots
 <p align="center">
 <img width="240" src="images/tracks.png">
 <img width="240" src="images/artist_song_list.png">
-<img width="240" src="images/create_playlist.png">
+<img width="240" src="images/create_playlist.png" style="border: 1px solid black">
 <img width="240" src="images/pick_playlist.png">
 <img width="240" src="images/player.png">
 <img width="240" src="images/albums.png">
