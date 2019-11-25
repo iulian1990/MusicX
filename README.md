@@ -34,12 +34,6 @@ has all of these small details that will set the rock-solid foundation of the la
     </kbd>
     
 </p>
-## Features
-
-
-The app displays a list of recipes - family friendly, vegetarian and personal. Users can see details about recipes, and they can put likes to recipes that interest them. 
-
-Other features include creating new personal recipes, changing application background image.
 
 ## Development Environment
 
