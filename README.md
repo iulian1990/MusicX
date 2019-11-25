@@ -9,9 +9,9 @@ has all of these small details that will set the rock-solid foundation of the la
 Screenshots
 =================
 
-<p align="center">
-<img width="240" src="images/tracks.png">
-<img width="240" src="images/artist_song_list.png">
+<p align="center"> <kbd>
+<img width="240" src="images/tracks.png">   </kbd> <kbd>
+    <img width="240" src="images/artist_song_list.png"></kbd>
     <kbd>
 <img width="240" src="images/create_playlist.png">
         </kbd>
