@@ -9,15 +9,19 @@ has all of these small details that will set the rock-solid foundation of the la
 Screenshots
 =================
 
-<p align="center"> <kbd>
-<img width="240" src="images/tracks.png">   </kbd> <kbd>
-    <img width="240" src="images/artist_song_list.png"></kbd>
+<p align="center"> 
     <kbd>
-<img width="240" src="images/create_playlist.png">
-        </kbd>
-<img width="240" src="images/pick_playlist.png">
-<img width="240" src="images/player.png">
-<img width="240" src="images/albums.png">
+        <img width="240" src="images/tracks.png">   
+    </kbd>
+    <kbd>
+        <img width="240" src="images/artist_song_list.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/create_playlist.png">
+    </kbd>
+  <kbd><img width="240" src="images/pick_playlist.png"></kbd>
+  <kbd><img width="240" src="images/player.png"></kbd>
+  <kbd><img width="240" src="images/albums.png"></kbd>
 </p>
 
 Features
