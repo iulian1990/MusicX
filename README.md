@@ -7,34 +7,6 @@ Kotlin Sample App is a sample project that presents modern, 2019 approach to [An
 The goal of the project is to demonstrate best practices, provide a set of guidelines, and present modern Android application architecture. This application may look simple, but it
 has all of these small details that will set the rock-solid foundation of the larger app suitable for bigger teams and long application lifecycle management.
 
-## Screenshots
-
-
-<p align="center"> 
-    <kbd>
-        <img width="240" src="images/tracks.png">   
-    </kbd>
-    <kbd>
-        <img width="240" src="images/albums.png">
-    </kbd>
-    <kbd>
-       <img width="240" src="images/artist_song_list.png">
-    </kbd>
-
-</p>
-<p align="center"> 
-    <kbd>
-        <img width="240" src="images/create_playlist.png">
-    </kbd>
-    <kbd>
-        <img width="240" src="images/player.png">
-    </kbd>
-    <kbd>
-        <img width="240" src="images/pick_playlist.png">
-    </kbd>
-    
-</p>
-
 ## Development Environment
 
 The app is written entirely in Kotlin and uses the Gradle build system.
@@ -62,6 +34,32 @@ The app is built on top of the last year's app. The architecture is built around
 -   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - managing background threads with simplified code and reducing needs for callbacks.
 -   [Timber](https://github.com/JakeWharton/timber) - a logger with a small, extensible API which provides utility on top of Android's normal Log class.
 -   [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) - for debugging databases and shared preferences in Android applications.
+
+## Screenshots
+
+<p align="center"> 
+    <kbd>
+        <img width="240" src="images/tracks.png">   
+    </kbd>
+    <kbd>
+        <img width="240" src="images/albums.png">
+    </kbd>
+    <kbd>
+       <img width="240" src="images/artist_song_list.png">
+    </kbd>
+
+</p>
+<p align="center"> 
+    <kbd>
+        <img width="240" src="images/create_playlist.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/player.png">
+    </kbd>
+    <kbd>
+        <img width="240" src="images/pick_playlist.png">
+    </kbd>
+</p>
 
 ## Music
 
