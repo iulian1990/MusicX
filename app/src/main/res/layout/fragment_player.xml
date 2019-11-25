@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.sample.musicx.viewmodels.PlayerViewModel" />
+
+        <variable
+            name="playerUI"
+            type="com.sample.musicx.fragments.PlayerUI" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:blurBackground="@{viewModel.mediaMetadata.albumArtUri}"
+        tools:context=".fragments.PlayerFragment">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/colorPrimary_alpha_60"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[0]"
+            android:contentDescription="@null" />
+
+        <FrameLayout
+            android:id="@+id/player_state"
+            android:layout_width="@dimen/player_state_button_size"
+            android:layout_height="@dimen/player_state_button_size"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/player_pause"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@null"
+                android:onClick="@{playerUI::onUIPause}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_pause"
+                app:isGone="@{!viewModel.isPlaying()}" />
+
+            <ImageButton
+                android:id="@+id/player_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@null"
+                android:onClick="@{playerUI::onUIPlay}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_play"
+                app:isGone="@{viewModel.isPlaying()}" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/player_skip_to_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:onClick="@{playerUI::onUISkipToPrevious}"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_previous"
+            app:layout_constraintBottom_toBottomOf="@+id/player_state"
+            app:layout_constraintEnd_toStartOf="@+id/player_state"
+            app:layout_constraintTop_toTopOf="@+id/player_state" />
+
+        <ImageButton
+            android:id="@+id/player_skip_to_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:onClick="@{playerUI::onUISkipToNext}"
+            android:padding="@dimen/padding_small"
+            app:layout_constraintBottom_toBottomOf="@+id/player_state"
+            app:layout_constraintStart_toEndOf="@+id/player_state"
+            app:layout_constraintTop_toTopOf="@+id/player_state"
+            app:srcCompat="@drawable/ic_next" />
+
+        <ImageButton
+            android:id="@+id/player_looping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:onClick="@{playerUI::onUILooping}"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_repeat"
+            android:tint="@{viewModel.isLooping()? @color/colorAccent: @android:color/white}"
+            app:layout_constraintBottom_toBottomOf="@+id/player_state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/player_state" />
+
+        <ImageButton
+            android:id="@+id/player_add_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:onClick="@{playerUI::onUIShowPlaylistPicker}"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_playlist_add"
+            app:layout_constraintBottom_toBottomOf="@+id/player_state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/player_state" />
+
+        <SeekBar
+            android:id="@+id/player_seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            app:max="@{viewModel.mediaMetadata.duration}"
+            app:progress="@{viewModel.elapsedTime}"
+            android:thumb="@null"
+            app:layout_constraintBottom_toTopOf="@+id/player_state"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/elapsed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:fontFamily="@font/khula"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_12sp"
+            app:formatElapsedTime="@{viewModel.elapsedTime}"
+            app:layout_constraintBottom_toTopOf="@+id/player_seek_bar"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@tools:sample/date/hhmm" />
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:fontFamily="@font/khula"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_12sp"
+            app:formatElapsedTime="@{viewModel.mediaMetadata.duration}"
+            app:layout_constraintBottom_toTopOf="@+id/player_seek_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="@tools:sample/date/hhmm" />
+
+        <TextView
+            android:id="@+id/player_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:layout_marginBottom="48dp"
+            android:fontFamily="@font/khula"
+            android:text="@{viewModel.mediaMetadata.subtitle}"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_14sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_seek_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@tools:sample/cities" />
+
+        <TextView
+            android:id="@+id/player_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:fontFamily="@font/khula"
+            android:text="@{viewModel.mediaMetadata.title}"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_28sp"
+            app:layout_constraintBottom_toTopOf="@+id/player_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@tools:sample/full_names" />
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@null"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/album_art"
+            android:layout_width="@dimen/playing_image_size"
+            android:layout_height="@dimen/playing_image_size"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/player_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:roundedCornerImageFromUri="@{viewModel.mediaMetadata.albumArtUri}"
+            app:size="@{@dimen/radius_normal}"
+            tools:src="@tools:sample/backgrounds/scenic[0]" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

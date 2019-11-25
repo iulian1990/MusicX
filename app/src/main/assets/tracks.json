@@ -1,0 +1,290 @@
+[
+  {
+    "id": "wake_up_01",
+    "title": "Intro - The Way Of Waking Up \n(feat. Alan Watts)",
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/01_-_Intro_-_The_Way_Of_Waking_Up_feat_Alan_Watts.mp3",
+    "duration": 90
+  },
+  {
+    "id": "wake_up_02",
+    "title": "Geisha",
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/02_-_Geisha.mp3",
+    "duration": 267
+  },
+  {
+    "id": "wake_up_03",
+    "title": "Voyage I - Waterfall",
+    "duration": 264,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/03_-_Voyage_I_-_Waterfall.mp3"
+  },
+  {
+    "id": "wake_up_04",
+    "title": "The Music In You",
+    "duration": 223,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/04_-_The_Music_In_You.mp3"
+  },
+  {
+    "id": "wake_up_05",
+    "title": "The Calm Before The Storm",
+    "duration": 229,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/05_-_The_Calm_Before_The_Storm.mp3"
+  },
+  {
+    "id": "wake_up_06",
+    "title": "No Pain, No Gain",
+    "duration": 304,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/06_-_No_Pain_No_Gain.mp3"
+  },
+  {
+    "id": "wake_up_07",
+    "title": "Voyage II - Satori",
+    "duration": 256,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/07_-_Voyage_II_-_Satori.mp3"
+  },
+  {
+    "id": "wake_up_08",
+    "title": "Reveal the Magic",
+    "duration": 293,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/08_-_Reveal_the_Magic.mp3"
+  },
+  {
+    "id": "wake_up_09",
+    "title": "Hachiko \n(The Faithtful Dog)",
+    "duration": 185,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/09_-_Hachiko_The_Faithtful_Dog.mp3"
+  },
+  {
+    "id": "wake_up_10",
+    "title": "Wake Up",
+    "duration": 251,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/10_-_Wake_Up.mp3"
+  },
+  {
+    "id": "wake_up_11",
+    "title": "Voyage III - The Space Between Us",
+    "duration": 290,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/11_-_Voyage_III_-_The_Space_Between_Us.mp3"
+  },
+  {
+    "id": "wake_up_12",
+    "title": "Ume No Kaori \n(feat. Sunawai)",
+    "duration": 334,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/12_-_Ume_No_Kaori_feat_Sunawai.mp3"
+  },
+  {
+    "id": "wake_up_13",
+    "title": "Outro - Totally Here and Now \n(feat. Alan Watts)",
+    "duration": 242,
+    "album_id": "wake_up",
+    "artist_id": "the_kyoto_connection",
+    "source": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/13_-_Outro_-_Totally_Here_and_Now_feat_Alan_Watts.mp3"
+  },
+  {
+    "id": "irsens_tale_01",
+    "title": "Intro \n(.udonthear)",
+    "duration": 63,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/01_-_Intro_udonthear.mp3"
+  },
+  {
+    "id": "irsens_tale_02",
+    "title": "Leaving",
+    "duration": 170,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/02_-_Leaving.mp3"
+  },
+  {
+    "id": "irsens_tale_03",
+    "title": "Irsen's Tale",
+    "duration": 164,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/03_-_Irsens_Tale.mp3"
+  },
+  {
+    "id": "irsens_tale_04",
+    "title": "Moonlight Reprise",
+    "duration": 181,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/04_-_Moonlight_Reprise.mp3"
+  },
+  {
+    "id": "irsens_tale_05",
+    "title": "Nothing Lasts Forever",
+    "duration": 132,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/05_-_Nothing_Lasts_Forever.mp3"
+  },
+  {
+    "id": "irsens_tale_06",
+    "title": "The Moments of Our Mornings",
+    "duration": 104,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/06_-_The_Moments_of_Our_Mornings.mp3"
+  },
+  {
+    "id": "irsens_tale_07",
+    "title": "Laceration",
+    "duration": 173,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/07_-_Laceration.mp3"
+  },
+  {
+    "id": "irsens_tale_08",
+    "title": "Memories",
+    "duration": 213,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/08_-_Memories.mp3"
+  },
+  {
+    "id": "irsens_tale_09",
+    "title": "Outro",
+    "duration": 65,
+    "album_id": "irsens_tale",
+    "artist_id": "kai_engel",
+    "source": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/09_-_Outro.mp3"
+  },
+  {
+    "id": "jazz_in_paris",
+    "title": "Jazz in Paris",
+    "duration": 103,
+    "album_id": "jazz_and_blues",
+    "artist_id": "media_right_productions",
+    "source": "https://storage.googleapis.com/automotive-media/Jazz_In_Paris.mp3"
+  },
+  {
+    "id": "the_messenger",
+    "title": "The Messenger",
+    "duration": 132,
+    "album_id": "jazz_and_blues",
+    "artist_id": "silent_partner",
+    "source": "https://storage.googleapis.com/automotive-media/The_Messenger.mp3"
+  },
+  {
+    "id": "talkies",
+    "title": "Talkies",
+    "duration": 162,
+    "album_id": "jazz_and_blues",
+    "artist_id": "huma_huma",
+    "source": "https://storage.googleapis.com/automotive-media/Talkies.mp3"
+  },
+  {
+    "id": "on_the_bach",
+    "title": "On the Bach",
+    "duration": 66,
+    "album_id": "cinematic",
+    "artist_id": "jingle_punks",
+    "source": "https://storage.googleapis.com/automotive-media/On_the_Bach.mp3"
+  },
+  {
+    "id": "the_story_unfolds",
+    "title": "The Story Unfolds",
+    "duration": 91,
+    "album_id": "cinematic",
+    "artist_id": "jingle_punks",
+    "source": "https://storage.googleapis.com/automotive-media/The_Story_Unfolds.mp3"
+  },
+  {
+    "id": "drop_and_roll",
+    "title": "Drop and Roll",
+    "duration": 121,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "silent_partner",
+    "source": "https://storage.googleapis.com/automotive-media/Drop_and_Roll.mp3"
+  },
+  {
+    "id": "motocross",
+    "title": "Motocross",
+    "duration": 182,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "topher_mohr_and_alex_elena",
+    "source": "https://storage.googleapis.com/automotive-media/Motocross.mp3"
+  },
+  {
+    "id": "wish_youd_come_true",
+    "title": "Wish You'd Come True",
+    "duration": 169,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "the_126ers",
+    "source": "https://storage.googleapis.com/automotive-media/Wish_You_d_Come_True.mp3"
+  },
+  {
+    "id": "awakening",
+    "title": "Awakening",
+    "duration": 220,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "silent_partner",
+    "source": "https://storage.googleapis.com/automotive-media/Awakening.mp3"
+  },
+  {
+    "id": "home",
+    "title": "Home",
+    "duration": 213,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "letter_box",
+    "source": "https://storage.googleapis.com/automotive-media/Home.mp3"
+  },
+  {
+    "id": "tell_the_angels",
+    "title": "Tell The Angels",
+    "duration": 208,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "letter_box",
+    "source": "https://storage.googleapis.com/automotive-media/Tell_The_Angels.mp3"
+  },
+  {
+    "id": "hey_sailor",
+    "title": "Hey Sailor",
+    "duration": 193,
+    "album_id": "youtube_audio_library_rock",
+    "artist_id": "letter_box",
+    "source": "https://storage.googleapis.com/automotive-media/Hey_Sailor.mp3"
+  },
+  {
+    "id": "keys_to_the_kingdom",
+    "title": "Keys To The Kingdom",
+    "duration": 221,
+    "album_id": "youtube_audio_library_rock_2",
+    "artist_id": "the_126ers",
+    "source": "https://storage.googleapis.com/automotive-media/Keys_To_The_Kingdom.mp3"
+  },
+  {
+    "id": "the_coldest_shoulder",
+    "title": "The Coldest Shoulder",
+    "duration": 160,
+    "album_id": "youtube_audio_library_rock_2",
+    "artist_id": "the_126ers",
+    "source": "https://storage.googleapis.com/automotive-media/The_Coldest_Shoulder.mp3"
+  }
+]

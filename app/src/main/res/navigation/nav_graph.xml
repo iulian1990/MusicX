@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/libraryFragment">
+    <fragment
+        android:id="@+id/libraryFragment"
+        android:name="com.sample.musicx.fragments.LibraryFragment"
+        android:label="fragment_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryFragment_to_albumSongListFragment"
+            app:destination="@id/albumSongListFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_newPlaylistFragment"
+            app:destination="@id/newPlaylistFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_playlistSongListFragment"
+            app:destination="@id/playlistSongListFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_artistSongListFragment"
+            app:destination="@id/artistSongListFragment" />
+        <action
+            android:id="@+id/action_libraryFragment_to_playerFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/albumSongListFragment"
+        android:name="com.sample.musicx.fragments.AlbumSongListFragment"
+        android:label="fragment_album_song_list"
+        tools:layout="@layout/fragment_album_song_list" >
+        <argument
+            android:name="album"
+            app:argType="com.sample.musicx.model.Album" />
+        <action
+            android:id="@+id/action_albumSongListFragment_to_playingFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPlaylistFragment"
+        android:name="com.sample.musicx.fragments.NewPlaylistFragment"
+        android:label="fragment_new_playlist"
+        tools:layout="@layout/fragment_new_playlist" />
+    <fragment
+        android:id="@+id/artistSongListFragment"
+        android:name="com.sample.musicx.fragments.ArtistSongListFragment"
+        android:label="fragment_artist_song_list"
+        tools:layout="@layout/fragment_artist_song_list" >
+        <argument
+            android:name="artist"
+            app:argType="com.sample.musicx.model.Artist" />
+        <action
+            android:id="@+id/action_artistSongListFragment_to_playingFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistSongListFragment"
+        android:name="com.sample.musicx.fragments.PlaylistSongListFragment"
+        android:label="fragment_playlist_song_list">
+        <argument
+            android:name="playlist"
+            app:argType="com.sample.musicx.model.Playlist" />
+        <action
+            android:id="@+id/action_playlistSongListFragment_to_playingFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.sample.musicx.fragments.PlayerFragment"
+        android:label="fragment_player">
+        <argument
+            android:name="trackCatalog"
+            app:argType="com.sample.musicx.model.TrackCatalog" />
+        <argument
+            android:name="startTrackIndex"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.sample.musicx.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/radioFragment"
+        android:name="com.sample.musicx.fragments.RadioFragment"
+        android:label="fragment_radio"
+        tools:layout="@layout/fragment_radio" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sample.musicx.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

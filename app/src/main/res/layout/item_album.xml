@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="album"
+            type="com.sample.musicx.model.Album" />
+
+        <variable
+            name="handler"
+            type="com.sample.musicx.handlers.AlbumHandler" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_item_height"
+        android:layout_margin="@dimen/margin_small"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:onClick="@{(view) -> handler.showSongs(view, album)}"
+        app:cardCornerRadius="@dimen/radius_normal">
+
+        <ImageView
+            android:id="@+id/album_item_image"
+            imageFromUri="@{album.image}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
+
+        <TextView
+            android:id="@+id/album_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="@font/khula_semibold"
+            android:padding="@dimen/padding_normal"
+            android:text="@{album.title}"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16sp"
+            tools:text="@tools:sample/full_names" />
+    </androidx.cardview.widget.CardView>
+</layout>

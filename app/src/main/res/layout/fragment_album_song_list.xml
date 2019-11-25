@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="album"
+            type="com.sample.musicx.model.Album" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="?attr/colorPrimaryDark"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="false"
+                app:toolbarId="@+id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="parallax">
+
+                    <ImageView
+                        android:id="@+id/app_bar_image"
+                        android:layout_width="@dimen/appbar_image_size"
+                        android:layout_height="@dimen/appbar_image_size"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        app:imageFromUri="@{album.image}"
+                        tools:srcCompat="@tools:sample/backgrounds/scenic[0]" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:fontFamily="@font/khula_semibold"
+                        android:text="@{album.title}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_24sp"
+                        tools:text="@tools:sample/full_names" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/khula_semibold"
+                        android:text="@string/album"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textSize="@dimen/text_size_16sp"
+                        tools:text="@tools:sample/lorem" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@drawable/ic_arrow_back"
+                    app:titleTextAppearance="@style/App.Toolbar.Title"
+                    app:titleTextColor="@android:color/white" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <include
+                android:id="@+id/song_list_content"
+                layout="@layout/song_list_content" />
+
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

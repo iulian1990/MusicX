@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wake_up",
+    "title": "Wake Up",
+    "image": "https://storage.googleapis.com/uamp/The_Kyoto_Connection_-_Wake_Up/art.jpg"
+  },
+  {
+    "id": "irsens_tale",
+    "title": "Irsen's Tale",
+    "image": "https://storage.googleapis.com/uamp/Kai_Engel_-_Irsens_Tale/art.jpg"
+  },
+  {
+    "id": "jazz_and_blues",
+    "title": "Jazz & Blues",
+    "image": "https://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "id": "cinematic",
+    "title": "Cinematic",
+    "image": "https://storage.googleapis.com/automotive-media/album_art.jpg"
+  },
+  {
+    "id": "youtube_audio_library_rock",
+    "title": "Youtube Audio Library Rock",
+    "image": "https://storage.googleapis.com/automotive-media/album_art_2.jpg"
+  },
+  {
+    "id": "youtube_audio_library_rock_2",
+    "title": "Youtube Audio Library Rock 2",
+    "image": "https://storage.googleapis.com/automotive-media/album_art_3.jpg"
+  }
+]

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="track"
+            type="com.sample.musicx.model.TrackEmbedded" />
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="@{clickListener}"
+        android:paddingStart="@dimen/padding_normal"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/padding_normal"
+        android:paddingBottom="@dimen/margin_small">
+
+        <ImageView
+            android:id="@+id/track_item_image"
+            android:layout_width="@dimen/track_image_size"
+            android:layout_height="@dimen/track_image_size"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:imageFromUri="@{track.album.image}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+        <TextView
+            android:id="@+id/track_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:ellipsize="end"
+            android:fontFamily="@font/khula_semibold"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_16sp"
+            app:layout_constraintBottom_toTopOf="@+id/track_item_middle_guideline"
+            app:layout_constraintEnd_toStartOf="@+id/track_item_duration"
+            app:layout_constraintStart_toEndOf="@+id/track_item_image"
+            app:textWithoutNewLines="@{track.title}"
+            tools:text="@tools:sample/lorem/random" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/track_item_middle_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <TextView
+            android:id="@+id/track_item_album"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@{track.album.title}"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="@dimen/text_size_12sp"
+            app:layout_constraintEnd_toEndOf="@+id/track_item_title"
+            app:layout_constraintStart_toStartOf="@+id/track_item_title"
+            app:layout_constraintTop_toTopOf="@+id/track_item_middle_guideline"
+            tools:text="@tools:sample/last_names" />
+
+        <TextView
+            android:id="@+id/track_item_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/khula_semibold"
+            android:textColor="@color/colorPrimaryLight"
+            android:textSize="@dimen/text_size_12sp"
+            app:formatElapsedTime="@{track.duration}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/date/hhmm" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
