@@ -19,11 +19,14 @@ Screenshots
     <kbd>
         <img width="240" src="images/create_playlist.png">
     </kbd>
+
+</p>
+<p align="center"> 
   <kbd><img width="240" src="images/pick_playlist.png"></kbd>
   <kbd><img width="240" src="images/player.png"></kbd>
   <kbd><img width="240" src="images/albums.png"></kbd>
+    
 </p>
-
 Features
 --------
 
