@@ -39,12 +39,6 @@ Other features include creating new personal recipes, changing application backg
 
 The app is written entirely in Kotlin and uses the Gradle build system.
 
-## Project Structure
-
-<p align="center">
-<img width="240" src="images/packages.png">
-</p>
-
 ## Tech-stack
 
 This project takes advantage of many popular libraries, plugins and tools of the Android ecosystem. Most of the libraries are in the stable version.
