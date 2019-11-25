@@ -1,3 +1,24 @@
+
+## MusicX Kotlin App
+
+<img src="screenshots/demo/demo.gif" width="250" align="right" hspace="20">
+
+Kotlin Sample App is a sample project that presents modern, 2019 approach to [Android](https://www.android.com/) application development using [Kotlin](https://kotlinlang.org/) and latest tech-stack.
+
+The goal of the project is to demonstrate best practices, provide a set of guidelines, and present modern Android application architecture. This application may look simple, but it
+has all of these small details that will set the rock-solid foundation of the larger app suitable for bigger teams and long application lifecycle management.
+
+## Table of Contents
+
+- [Development](https://github.com/VMadalin/kotlin-sample-app#development)
+- [Design](https://github.com/VMadalin/kotlin-sample-app#design)
+- [Architecture](https://github.com/VMadalin/kotlin-sample-app#architecture)
+- [Documentation](https://github.com/VMadalin/kotlin-sample-app#documentation)
+- [Tech-stack](https://github.com/VMadalin/kotlin-sample-app#tech-stack)
+- [Resources](https://github.com/VMadalin/kotlin-sample-app#resources)
+- [Contributions](https://github.com/VMadalin/kotlin-sample-app#contributions)
+- [License](https://github.com/VMadalin/kotlin-sample-app#license)
+
 MusicX Kotlin App
 =================
 
@@ -56,15 +77,32 @@ We used [Timber](https://github.com/JakeWharton/timber) for logging.
 
 We used [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) for debugging databases and shared preferences in Android applications.
 
-Project Structure
------------------
+## Project Structure
+
 
 <p align="center">
 <img src="images/package_structure.png">
 </p>
 
-Music
------
+## Tech-stack
+
+This project takes advantage of many popular libraries, plugins and tools of the Android ecosystem. Most of the libraries are in the stable version.
+
+### Dependencies
+
+-   [Jetpack](https://developer.android.com/jetpack):
+    -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
+    -   [AndroidX](https://developer.android.com/jetpack/androidx) - major improvement to the original Android [Support Library](https://developer.android.com/topic/libraries/support-library/index), which is no longer maintained.
+    -   [Data Binding](https://developer.android.com/topic/libraries/data-binding/) - allows you to bind UI components in your layouts to data sources in your app using a declarative format rather than programmatically.
+    -   [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
+    -   [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) - lifecycle-aware, meaning it respects the lifecycle of other app components, such as activities, fragments, or services.
+    -   [Navigation](https://developer.android.com/guide/navigation/) - helps you implement navigation, from simple button clicks to more complex patterns, such as app bars and the navigation drawer.
+    -   [Room](https://developer.android.com/topic/libraries/architecture/room) - persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
+    -   [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - designed to store and manage UI-related data in a lifecycle conscious way. The ViewModel class allows data to survive configuration changes such as screen rotations.
+-   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - managing background threads with simplified code and reducing needs for callbacks.
+-   [Timber](https://github.com/JakeWharton/timber) - a logger with a small, extensible API which provides utility on top of Android's normal Log class.
+
+## Music
 
 Music provided by the [Free Music Archive](http://freemusicarchive.org/).
 
@@ -73,8 +111,7 @@ Music provided by the [Free Music Archive](http://freemusicarchive.org/).
 - [Wake Up](http://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957/) by
 [The Kyoto Connection](http://freemusicarchive.org/music/The_Kyoto_Connection/).
 
-License
--------
+## License
 
 Copyright 2019 Iulian
 Licensed under the Apache License, Version 2.0 (the "License");
