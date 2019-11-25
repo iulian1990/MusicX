@@ -42,7 +42,7 @@ The app is written entirely in Kotlin and uses the Gradle build system.
 ## Project Structure
 
 <p align="center">
-<img src="images/packages.png">
+<img width="240" src="images/packages.png">
 </p>
 
 ## Tech-stack
