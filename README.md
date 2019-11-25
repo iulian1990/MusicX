@@ -1,34 +1,21 @@
 
 ## MusicX Kotlin App
 
-<img src="screenshots/demo/demo.gif" width="250" align="right" hspace="20">
-
 Kotlin Sample App is a sample project that presents modern, 2019 approach to [Android](https://www.android.com/) application development using [Kotlin](https://kotlinlang.org/) and latest tech-stack.
 
 The goal of the project is to demonstrate best practices, provide a set of guidelines, and present modern Android application architecture. This application may look simple, but it
 has all of these small details that will set the rock-solid foundation of the larger app suitable for bigger teams and long application lifecycle management.
 
-## Table of Contents
-
-- [Development](https://github.com/VMadalin/kotlin-sample-app#development)
-- [Design](https://github.com/VMadalin/kotlin-sample-app#design)
-- [Architecture](https://github.com/VMadalin/kotlin-sample-app#architecture)
-- [Documentation](https://github.com/VMadalin/kotlin-sample-app#documentation)
-- [Tech-stack](https://github.com/VMadalin/kotlin-sample-app#tech-stack)
-- [Resources](https://github.com/VMadalin/kotlin-sample-app#resources)
-- [Contributions](https://github.com/VMadalin/kotlin-sample-app#contributions)
-- [License](https://github.com/VMadalin/kotlin-sample-app#license)
-
-MusicX Kotlin App
+Screenshots
 =================
 
-The goal of this sample is to show a basic implementation of a media player app using some Android development best practices with Android Jetpack.
-
 <p align="center">
-<img width="240" src="images/screenshot_detail.png">
-<img width="240" src="images/screenshot_new_recipe.png">
-<img width="240" src="images/screenshot_recipe_list.png">
-<img width="240" src="images/screenshot_settings.png">
+<img width="240" src="images/tracks.png">
+<img width="240" src="images/artist_song_list.png">
+<img width="240" src="images/create_playlist.png">
+<img width="240" src="images/pick_playlist.png">
+<img width="240" src="images/player.png">
+<img width="240" src="images/albums.png">
 </p>
 
 Features
@@ -46,36 +33,6 @@ The app is written entirely in Kotlin and uses the Gradle build system.
 Architecture
 ------------
 
-The app is built on top of the last year's app. The architecture is built around
-[Android Architecture Components](https://developer.android.com/topic/libraries/architecture/).
-
-We followed the recommendations laid out in the
-[Guide to App Architecture](https://developer.android.com/jetpack/docs/guide)
-when deciding on the architecture for the app. We kept logic away from
-Activities and Fragments and moved it to
-[ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)s.
-We observed data using
-[LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
-and used the [Data Binding Library](https://developer.android.com/topic/libraries/data-binding/)
-to bind UI components in layouts to the app's data sources.
-
-We used a Repository layer for handling data operations. Settings are stored in
-SharedPreferences.
-
-We used [Navigation component](https://developer.android.com/guide/navigation)
-to simplify into a single Activity app.
-
-We used [Room](https://developer.android.com/jetpack/androidx/releases/room) for recipes.
-
-We used [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager) for Android background jobs.
-
-We used [Glide](https://bumptech.github.io/glide) for image loading.
-
-We used [Gson](https://github.com/google/gson) to convert a JSON string to an equivalent Java object.
-
-We used [Timber](https://github.com/JakeWharton/timber) for logging.
-
-We used [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) for debugging databases and shared preferences in Android applications.
 
 ## Project Structure
 
@@ -90,6 +47,9 @@ This project takes advantage of many popular libraries, plugins and tools of the
 
 ### Dependencies
 
+The app is built on top of the last year's app. The architecture is built around
+[Android Architecture Components](https://developer.android.com/topic/libraries/architecture/).
+
 -   [Jetpack](https://developer.android.com/jetpack):
     -   [Android KTX](https://developer.android.com/kotlin/ktx.html) - provide concise, idiomatic Kotlin to Jetpack and Android platform APIs.
     -   [AndroidX](https://developer.android.com/jetpack/androidx) - major improvement to the original Android [Support Library](https://developer.android.com/topic/libraries/support-library/index), which is no longer maintained.
@@ -99,8 +59,12 @@ This project takes advantage of many popular libraries, plugins and tools of the
     -   [Navigation](https://developer.android.com/guide/navigation/) - helps you implement navigation, from simple button clicks to more complex patterns, such as app bars and the navigation drawer.
     -   [Room](https://developer.android.com/topic/libraries/architecture/room) - persistence library provides an abstraction layer over SQLite to allow for more robust database access while harnessing the full power of SQLite.
     -   [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - designed to store and manage UI-related data in a lifecycle conscious way. The ViewModel class allows data to survive configuration changes such as screen rotations.
--   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - managing background threads with simplified code and reducing needs for callbacks.
--   [Timber](https://github.com/JakeWharton/timber) - a logger with a small, extensible API which provides utility on top of Android's normal Log class.
+    -   [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager) - for Android background jobs.
+    -   [Glide](https://bumptech.github.io/glide) - for image loading.
+    -   [Gson](https://github.com/google/gson) - to convert a JSON string to an equivalent Java object.
+    -   [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - managing background threads with simplified code and reducing needs for callbacks.
+    -   [Timber](https://github.com/JakeWharton/timber) - a logger with a small, extensible API which provides utility on top of Android's normal Log class.
+    -   [Android Debug Database](https://github.com/amitshekhariitbhu/Android-Debug-Database) - for debugging databases and shared preferences in Android applications.
 
 ## Music
 
