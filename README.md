@@ -1,5 +1,6 @@
 
 MusicX Kotlin App
+-----------------
 
 Kotlin Sample App is a sample project that presents modern, 2019 approach to [Android](https://www.android.com/) application development using [Kotlin](https://kotlinlang.org/) and latest tech-stack.
 
