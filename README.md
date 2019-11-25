@@ -2,7 +2,7 @@
 MusicX Kotlin App
 -----------------
 
-<img src="screenshots/video.gif" width="250" align="right" hspace="20">
+<img src="images/video.gif" width="250" align="right" hspace="20">
 
 Kotlin Sample App is a sample project that presents modern, 2019 approach to [Android](https://www.android.com/) application development using [Kotlin](https://kotlinlang.org/) and latest tech-stack.
 
